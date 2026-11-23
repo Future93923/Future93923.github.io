@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XCLUSIVE WROUGHT | Senior Frontend Developer, AI Specialist &amp; Structural Fabricator</title>
+<meta name="description" content="Portfolio of a senior frontend developer, UX/UI designer, AI and prompt engineering specialist, and structural fabricator. Xclusive offers.">
+<meta property="og:title" content="XCLUSIVE WROUGHT | Xclusive offers">
+<meta property="og:description" content="Frontend development, UX/UI, AI and structural fabrication.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="theme-color" content="#07080d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;500;700&family=Syne:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+<div id="glow" aria-hidden="true"></div>
+<canvas id="field" aria-hidden="true"></canvas>
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="logo" href="#top" aria-label="Home"><img src="static/images/logo.jpg" alt="Xclusive Wrought logo"></a>
+
+  <nav id="mainnav" aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="nav-tools">
+    <button id="theme" class="icon-btn" aria-label="Switch between dark and light mode">◐</button>
+    <button id="menu" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mainnav">☰</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="chip"><span class="dot"></span>Available for projects</p>
+      <p class="hello">&gt; Hello, I'm</p>
+      <h1>Daniel Uche Egemasi</h1>
+      <p class="role"><span id="typed"></span><span class="caret" aria-hidden="true"></span></p>
+      <p class="lead">Twenty years of building interfaces and structures. I design websites, prompt AI systems, and fabricate gates, rails, canopies and more. Xclusive offers.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Start a project</a>
+        <a class="btn ghost" href="assets/cv.pdf" download>Download CV</a>
+      </div>
+      <dl class="stats">
+        <div><dt data-count="20" data-suffix="+">0</dt><dd>Years of craft</dd></div>
+        <div><dt data-count="3">0</dt><dd>Disciplines</dd></div>
+        <div><dt data-count="6">0</dt><dd>Fabrication lines</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero-visual">
+      <div class="ring" aria-hidden="true"></div>
+      <div class="hero-image" id="hero-image">
+        <img src="static/images/fu3.jpg" alt="Portrait of Daniel Egemasi">
+      </div>
+      <span class="corner tl" aria-hidden="true"></span><span class="corner br" aria-hidden="true"></span>
+    </div>
+  </section>
+
+  <section id="about" class="block">
+    <p class="eyebrow">01 / About</p>
+    <h2>About</h2>
+    <p class="wide">I am a senior frontend developer with over two decades of experience in UX/UI design, prompt engineering and AI. Alongside software, I run a structural practice covering welding, fabrication, structural maintenance, and interior and exterior work. Replace this paragraph with your own story.</p>
+  </section>
+
+  <section id="skills" class="block">
+    <p class="eyebrow">02 / Capabilities</p>
+    <h2>Skills</h2>
+    <div class="grid three">
+      <article class="glass">
+        <h3>Frontend</h3>
+        <ul class="bars">
+          <li style="--v:95%"><span>HTML5 &amp; CSS3</span><i></i></li>
+          <li style="--v:90%"><span>JavaScript</span><i></i></li>
+          <li style="--v:85%"><span>Responsive design</span><i></i></li>
+        </ul>
+      </article>
+      <article class="glass">
+        <h3>UX/UI design</h3>
+        <ul class="bars">
+          <li style="--v:92%"><span>Interface design</span><i></i></li>
+          <li style="--v:88%"><span>Prototyping</span><i></i></li>
+          <li style="--v:85%"><span>Accessibility</span><i></i></li>
+        </ul>
+      </article>
+      <article class="glass">
+        <h3>AI &amp; prompt engineering</h3>
+        <ul class="bars">
+          <li style="--v:90%"><span>Prompt design</span><i></i></li>
+          <li style="--v:80%"><span>AI-assisted workflows</span><i></i></li>
+          <li style="--v:75%"><span>ITF-AI Level 3 (in progress)</span><i></i></li>
+        </ul>
+      </article>
+    </div>
+    <h3 class="sub">Structural and craft</h3>
+    <ul class="tags">
+      <li>Structural engineering</li><li>Welding</li><li>Fabrication</li><li>Structural maintenance</li><li>Interiors</li><li>Exteriors</li>
+    </ul>
+    <h3 class="sub">Tools</h3>
+    <ul class="tags">
+      <li>Git &amp; GitHub</li><li>Figma</li><li>VS Code</li><li>Claude</li><li>ChatGPT</li><li>Accessibility audits</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="block">
+    <p class="eyebrow">03 / Work</p>
+    <h2>Structural jobs</h2>
+    <div class="grid projects">
+      <article class="glass proj tilt"><div class="ph"><img src="static/images/5.jpg" loading="lazy" alt="Fabricated gate"></div><h3>Gates</h3><p>Custom-fabricated entrance and security gates.</p></article>
+      <article class="glass proj tilt"><div class="ph"><img src="static/images/8.jpg" loading="lazy" alt="Steel rails"></div><h3>Rails</h3><p>Staircase, balcony and safety rails.</p></article>
+      <article class="glass proj tilt"><div class="ph"><img src="static/images/9.jpg" loading="lazy" alt="Ship fabrication"></div><h3>Ships</h3><p>Marine structural and fabrication work.</p></article>
+      <article class="glass proj tilt"><div class="ph"><img src="static/images/1.jpg" loading="lazy" alt="Steel canopy"></div><h3>Canopies</h3><p>Steel-framed canopies and covered walkways.</p></article>
+      <article class="glass proj tilt"><div class="ph"><img src="static/images/4.jpg" loading="lazy" alt="Metal furniture"></div><h3>Furniture</h3><p>Metal and mixed-material furniture.</p></article>
+      <article class="glass proj tilt"><div class="ph"><img src="static/images/2.jpg" loading="lazy" alt="Steel door"></div><h3>Doors</h3><p>Fabricated steel and decorative doors.</p></article>
+    </div>
+
+    <h2 class="gap">Web projects</h2>
+    <div class="grid three">
+      <article class="glass"><h3>Project title</h3><p>One line on the problem and your result.</p><a href="#" class="link">View live site →</a></article>
+      <article class="glass"><h3>Project title</h3><p>One line on the problem and your result.</p><a href="#" class="link">View on GitHub →</a></article>
+      <article class="glass"><h3>Project title</h3><p>One line on the problem and your result.</p><a href="#" class="link">View case study →</a></article>
+    </div>
+  </section>
+
+  <section id="experience" class="block">
+    <p class="eyebrow">04 / Journey</p>
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li><time>Year – Present</time><h3>Senior Frontend Developer &amp; AI Specialist</h3><p>Company or freelance. Add one line on your impact.</p></li>
+      <li><time>Year – Year</time><h3>Structural Engineer and Fabricator</h3><p>Welding, fabrication and structural maintenance.</p></li>
+      <li><time>Year – Year</time><h3>Web Developer</h3><p>Started building for the web.</p></li>
+    </ol>
+  </section>
+
+  <section id="credentials" class="block">
+    <p class="eyebrow">05 / Proof</p>
+    <h2>Certifications and education</h2>
+    <div class="grid two">
+      <article class="glass">
+        <h3>Certifications</h3>
+        <ul class="plain">
+          <li><strong>ITF-AI Level 3 Specialist</strong><span class="badge">In progress</span></li>
+          <li><strong>Certification name</strong><span>Issuer, year</span></li>
+        </ul>
+      </article>
+      <article class="glass">
+        <h3>Education</h3>
+        <ul class="plain">
+          <li><strong>Degree or diploma</strong><span>Institution, year</span></li>
+          <li><strong>Trade training</strong><span>Institution, year</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="block">
+    <p class="eyebrow">06 / Feedback</p>
+    <h2>Kind words</h2>
+    <div class="grid two">
+      <blockquote class="glass">Replace with a client testimonial.<cite>Client name, role</cite></blockquote>
+      <blockquote class="glass">Replace with a client testimonial.<cite>Client name, role</cite></blockquote>
+    </div>
+  </section>
+
+  <section id="contact" class="block">
+    <p class="eyebrow">07 / Contact</p>
+    <h2>Let's build something</h2>
+    <div class="grid two">
+      <div class="glass">
+        <ul class="plain">
+          <li><strong>Email</strong><a href="mailto:danielegemasi@gmail.com">danielegemasi@gmail.com</a></li>
+          <li><strong>Phone</strong><a href="tel:+2348136158097">+234 813 615 8097</a></li>
+          <li><strong>WhatsApp</strong><a href="https://wa.me/2348136158097">08136158097</a></li>
+          <li><strong>GitHub</strong><a href="https://github.com/Future93923">Future93923</a></li>
+  <!--        <li><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/your-profile">Add your link</a></li>
+          <li><strong>X</strong><a href="https://x.com/your-handle">Add your link</a></li>
+          <li><strong>Behance</strong><a href="https://www.behance.net/your-profile">Add your link</a></li>
+-->       
+	   </ul>
+      </div>
+
+      <!-- Opens the visitor's mail app (handled in static/js/main.js) -->
+      <form class="form" id="form" novalidate>
+        <div class="form-head">
+          <span class="led" aria-hidden="true"></span>
+          <h3>Send a message</h3>
+          <span class="form-tag">secure // mail app</span>
+        </div>
+
+        <div class="field">
+          <input id="f-name" name="name" type="text" placeholder=" " required autocomplete="name">
+          <label for="f-name">Your name</label>
+          <span class="line" aria-hidden="true"></span>
+        </div>
+
+        <div class="field">
+          <input id="f-email" name="email" type="email" placeholder=" " required autocomplete="email">
+          <label for="f-email">Your email</label>
+          <span class="line" aria-hidden="true"></span>
+        </div>
+
+        <div class="field">
+          <input id="f-subject" name="subject" type="text" placeholder=" " autocomplete="off">
+          <label for="f-subject">Subject (optional)</label>
+          <span class="line" aria-hidden="true"></span>
+        </div>
+
+        <div class="field">
+          <textarea id="f-message" name="message" rows="5" placeholder=" " required></textarea>
+          <label for="f-message">Your message</label>
+          <span class="line" aria-hidden="true"></span>
+        </div>
+
+        <button class="btn primary send" type="submit"><span>Send message</span><i aria-hidden="true">➜</i></button>
+        <p id="status" role="status" aria-live="polite"></p>
+        <button class="btn ghost small" id="copy" type="button" hidden>Copy message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><p>© <span id="year"></span> Daniel Uche Egemasi. Xclusive offers.</p></footer>
+
+<script >
+(function () {
+  'use strict';
+
+  var root = document.documentElement;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finePointer = window.matchMedia('(pointer: fine)').matches;
+  var $ = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+  root.classList.add('js');
+
+  /* ---------- Theme toggle (remembers choice, falls back to system) ---------- */
+  var saved = null;
+  try { saved = localStorage.getItem('theme'); } catch (e) {}
+  if (!saved && window.matchMedia('(prefers-color-scheme: light)').matches) saved = 'light';
+  if (saved) root.setAttribute('data-theme', saved);
+
+  var palette = { gold: '#e0b94a', cyan: '#22e6ff' };
+  function readColors() {
+    var s = getComputedStyle(root);
+    palette.gold = s.getPropertyValue('--gold').trim() || palette.gold;
+    palette.cyan = s.getPropertyValue('--cyan').trim() || palette.cyan;
+  }
+  readColors();
+
+  $('#theme').addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    setTimeout(function () { readColors(); if (reduce) drawField(true); }, 60);
+  });
+
+  /* ---------- Mobile menu ---------- */
+  var menu = $('#menu'), nav = $('#mainnav');
+  function closeMenu() { nav.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); menu.textContent = '☰'; }
+  menu.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    menu.setAttribute('aria-expanded', String(open));
+    menu.textContent = open ? '✕' : '☰';
+  });
+  $$('a', nav).forEach(function (a) { a.addEventListener('click', closeMenu); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
+
+  /* ---------- Typing effect ---------- */
+  var roles = [
+    'Senior Frontend Developer',
+    'UX/UI Designer',
+    'AI & Prompt Engineering Specialist',
+    'Structural Engineer & Fabricator'
+  ];
+  var typed = $('#typed');
+  if (reduce) {
+    typed.textContent = roles.join(' · ');
+  } else {
+    var r = 0, c = 0, del = false;
+    (function tick() {
+      var word = roles[r];
+      c += del ? -1 : 1;
+      typed.textContent = word.slice(0, c);
+      var wait = del ? 35 : 75;
+      if (!del && c === word.length) { del = true; wait = 1600; }
+      else if (del && c === 0) { del = false; r = (r + 1) % roles.length; wait = 350; }
+      setTimeout(tick, wait);
+    })();
+  }
+
+  /* ---------- Particle network background ---------- */
+  var cv = $('#field'), ctx = cv.getContext('2d');
+  var pts = [], W = 0, H = 0, dpr = 1, mouse = { x: -999, y: -999 }, running = true;
+
+  function sizeField() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = window.innerWidth; H = window.innerHeight;
+    cv.width = W * dpr; cv.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var n = Math.min(80, Math.floor(W / 18));
+    pts = [];
+    for (var i = 0; i < n; i++) {
+      pts.push({ x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35 });
+    }
+  }
+
+  function drawField(still) {
+    ctx.clearRect(0, 0, W, H);
+    ctx.lineWidth = 1;
+    for (var i = 0; i < pts.length; i++) {
+      var p = pts[i];
+      if (!still) {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0 || p.x > W) p.vx *= -1;
+        if (p.y < 0 || p.y > H) p.vy *= -1;
+      }
+      ctx.globalAlpha = 0.75;
+      ctx.fillStyle = palette.gold;
+      ctx.beginPath(); ctx.arc(p.x, p.y, 1.8, 0, 6.283); ctx.fill();
+      for (var j = i + 1; j < pts.length; j++) {
+        var q = pts[j], dx = p.x - q.x, dy = p.y - q.y, d = dx * dx + dy * dy;
+        if (d < 14000) {
+          ctx.globalAlpha = (1 - d / 14000) * 0.35;
+          ctx.strokeStyle = palette.cyan;
+          ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+        }
+      }
+      var mx = p.x - mouse.x, my = p.y - mouse.y;
+      if (mx * mx + my * my < 22000) {
+        ctx.globalAlpha = 0.55; ctx.strokeStyle = palette.gold;
+        ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
+      }
+    }
+    ctx.globalAlpha = 1;
+  }
+  function loop() {
+    if (running) drawField(false);
+    requestAnimationFrame(loop);
+  }
+  sizeField();
+  if (reduce) drawField(true); else loop();
+  window.addEventListener('resize', function () { sizeField(); if (reduce) drawField(true); });
+  document.addEventListener('visibilitychange', function () { running = !document.hidden; });
+
+  /* ---------- Cursor glow, card spotlight, tilt ---------- */
+  var glow = $('#glow');
+  window.addEventListener('mousemove', function (e) {
+    mouse.x = e.clientX; mouse.y = e.clientY;
+    if (finePointer && !reduce) {
+      glow.style.opacity = 1;
+      glow.style.transform = 'translate(' + e.clientX + 'px,' + e.clientY + 'px)';
+    }
+  });
+  document.addEventListener('mouseleave', function () { glow.style.opacity = 0; mouse.x = mouse.y = -999; });
+
+  $$('.glass').forEach(function (card) {
+    card.addEventListener('mousemove', function (e) {
+      var b = card.getBoundingClientRect();
+      card.style.setProperty('--mx', (e.clientX - b.left) + 'px');
+      card.style.setProperty('--my', (e.clientY - b.top) + 'px');
+    });
+  });
+
+  if (finePointer && !reduce) {
+    $$('.tilt').forEach(function (card) {
+      card.addEventListener('mousemove', function (e) {
+        var b = card.getBoundingClientRect();
+        var x = (e.clientX - b.left) / b.width - 0.5;
+        var y = (e.clientY - b.top) / b.height - 0.5;
+        card.style.transform = 'perspective(800px) rotateY(' + (x * 8) + 'deg) rotateX(' + (-y * 8) + 'deg) translateY(-4px)';
+      });
+      card.addEventListener('mouseleave', function () { card.style.transform = ''; });
+    });
+  }
+
+  /* ---------- Scroll progress and active nav link ---------- */
+  var bar = $('#progress');
+  function onScroll() {
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = 'scaleX(' + (h > 0 ? window.scrollY / h : 0) + ')';
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  var links = $$('#mainnav a');
+  if ('IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          links.forEach(function (l) { l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id); });
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    $$('main section[id]').forEach(function (s) { spy.observe(s); });
+  }
+
+  /* ---------- Reveal on scroll, skill bars, counters ---------- */
+  function countUp(el) {
+    var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+    var suffix = el.getAttribute('data-suffix') || '';
+    if (reduce) { el.textContent = target + suffix; return; }
+    var start = null, dur = 1400;
+    (function step(t) {
+      if (!start) start = t;
+      var p = Math.min((t - start) / dur, 1);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    })(performance.now());
+  }
+
+  var revealTargets = $$('.block > h2, .block > .eyebrow, .block > .wide, .glass, .timeline li, .tags, .hero-text > *');
+  revealTargets.forEach(function (el) { el.classList.add('reveal'); });
+
+  var lists = $$('.bars'), counters = $$('[data-count]');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var t = en.target;
+        t.classList.add('show');
+        if (t.classList.contains('bars')) t.classList.add('in');
+        if (t.hasAttribute('data-count')) countUp(t);
+        io.unobserve(t);
+      });
+    }, { threshold: 0.2 });
+    revealTargets.concat(lists, counters).forEach(function (el) { io.observe(el); });
+  } else {
+    revealTargets.forEach(function (el) { el.classList.add('show'); });
+    lists.forEach(function (l) { l.classList.add('in'); });
+    counters.forEach(countUp);
+  }
+
+  /* ---------- Contact form: opens the device's mail app ---------- */
+  var TO = 'danielegemasi@gmail.com';
+  var form = $('#form');
+  var statusEl = $('#status');
+  var copyBtn = $('#copy');
+  var lastBody = '';
+
+  function setStatus(msg, isErr) {
+    statusEl.textContent = msg;
+    statusEl.classList.toggle('err', !!isErr);
+  }
+  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }
+
+  ['f-name', 'f-email', 'f-message'].forEach(function (id) {
+    $('#' + id).addEventListener('input', function () { this.parentNode.classList.remove('invalid'); });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var name = form.elements.name.value.trim();
+    var email = form.elements.email.value.trim();
+    var subject = form.elements.subject.value.trim();
+    var message = form.elements.message.value.trim();
+
+    var bad = [];
+    if (!name) bad.push('f-name');
+    if (!validEmail(email)) bad.push('f-email');
+    if (!message) bad.push('f-message');
+    $$('.field', form).forEach(function (f) { f.classList.remove('invalid'); });
+    if (bad.length) {
+      bad.forEach(function (id) { $('#' + id).parentNode.classList.add('invalid'); });
+      $('#' + bad[0]).focus();
+      setStatus('Please complete the highlighted fields.', true);
+      return;
+    }
+
+    var mailSubject = subject || ('Portfolio enquiry from ' + name);
+    lastBody = message + '\n\n— ' + name + '\n' + email;
+    var href = 'mailto:' + TO +
+      '?subject=' + encodeURIComponent(mailSubject) +
+      '&body=' + encodeURIComponent(lastBody);
+
+    var btn = $('.send', form);
+    btn.classList.add('busy');
+    setStatus('Opening your mail app…');
+    copyBtn.hidden = false;
+
+    // Hand off to the device's default mail app
+    window.location.href = href;
+
+    setTimeout(function () {
+      btn.classList.remove('busy');
+      setStatus('If your mail app did not open, use "Copy message" and email ' + TO + '.');
+    }, 1800);
+  });
+
+  copyBtn.addEventListener('click', function () {
+    var text = 'To: ' + TO + '\n\n' + lastBody;
+    function done(ok) { setStatus(ok ? 'Message copied. Paste it into any email.' : 'Copy failed. Please email ' + TO + ' directly.', !ok); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (err) {}
+      document.body.removeChild(ta);
+      done(ok);
+    }
+  });
+
+  /* ---------- Footer year ---------- */
+  $('#year').textContent = new Date().getFullYear();
+})();
+
+</script>
+</body>
+</html>
